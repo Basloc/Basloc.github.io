@@ -13,7 +13,7 @@
 <script>
     function myFunc() {delete window.document.referrer; window.document.__defineGetter__('referrer', function () { return "http://challenge01.root-me.org:58003/login"; }); 
                        const wi = window.open("http://challenge01.root-me.org:58003/profile"); 
-                       wi.opener.document.getElementById("oui").innerHTML = wi.document.body.innerHTML;
+                       wi.opener.document.getElementById("oui").innerHTML = wi.opener.document.referrer;
                       }
 </script>
 
