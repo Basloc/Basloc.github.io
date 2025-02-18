@@ -11,7 +11,10 @@
     <span id="oui"></span>
 
 <script>
-    function myFunc() {const wi = window.open("http://challenge01.root-me.org:58003/profile") ; wi.opener.document.getElementById("oui").innerHTML = wi.document.body.innerHTML ; }
+    function myFunc() {const wi = window.open("http://challenge01.root-me.org:58003/profile") ; 
+                       const test = wi.open("https://basloc.github.io/index.html");  
+                       wi.opener.document.getElementById("oui").innerHTML = test.opener.document.body.innerHTML;
+                      }
 </script>
 
 </body>
